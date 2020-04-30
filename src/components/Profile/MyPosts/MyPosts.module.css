@@ -1,0 +1,34 @@
+ .myPosts{
+   display:grid;
+   grid-template-columns: 5fr 7fr;
+   grid-template-areas: 'a b';
+ }
+  .item{
+    color:coral;
+  }
+ .postArea{
+   grid-area: a;
+   padding:10px;
+   color:rgb(62, 62, 62)
+ }
+ .posts{
+   grid-area: b;
+}
+.postArea h3{
+  padding:10px;
+}
+
+ textarea{
+   margin:10px;
+   width:200px;
+   height:60px;
+ }
+ button{
+   margin:10px;
+   height:25px;
+   border-radius: 15%;
+   border: 2px coral solid;
+   text-transform: uppercase;
+   color:rgb(0, 0, 110)
+ }
+ 

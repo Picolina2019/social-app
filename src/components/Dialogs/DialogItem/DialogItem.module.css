@@ -1,0 +1,8 @@
+.dialog{
+   padding-top:5px; 
+}
+.dialog a{
+    text-decoration: none;
+    color:rgb(183, 90, 57);
+    margin:10px;
+}

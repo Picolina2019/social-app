@@ -1,0 +1,41 @@
+.content img{
+    width:140vh;
+    height:40vh;
+    
+  }
+  .item{
+    color:coral;
+  }
+  .description{
+      padding:20px;
+      margin-left:5px;
+      
+  }
+  .description div{
+    padding:2px;
+  }
+  .profileImage img{
+    width:220px;
+    height:230px;
+    border-radius: 30%;
+    margin:6px 8px;
+  }
+  .status{
+    margin-left:55px;
+    
+  }
+  .status b{
+    margin-left:30px;
+    color:rgb(219, 143, 2);
+  }
+  .contact {
+    margin-left:10px;
+    color:rgb(17, 17, 97);
+  }
+  .contact span{
+    font-weight: bold;
+  }
+
+  .button{
+    margin-left:-30px;
+  }
