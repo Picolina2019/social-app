@@ -1,19 +1,25 @@
-.header{
-    grid-area: h;
-    background-color:rgb(13, 67, 124);
-  
-  }
-  .header img{
-    width:75px;
-    margin-top:-2vh;
-    margin-left:-2vh;
-  }
-  .loginBlock{
-    float:right;
-    margin-top:15px;
-    margin-right:10px;
-  }
-  .loginBlock a{
-    color:white;
-    text-decoration: none;
-  }
+.header {
+  grid-area: h;
+  background-color: rgb(13, 67, 124);
+}
+.header img {
+  width: 75px;
+  margin-top: -2vh;
+  margin-left: -2vh;
+}
+.loginBlock {
+  float: right;
+  color: coral;
+  font-weight: bold;
+}
+
+.loginBlock button {
+  border: 2px solid coral;
+  border-radius: 0%;
+  font-weight: 600;
+}
+
+.loginBlock a {
+  color: white;
+  text-decoration: none;
+}

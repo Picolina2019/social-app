@@ -16,7 +16,7 @@ let state= props.messagesPage
 let dialogsElements = state.dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>);
 
 let messagesElements= state.messagesData.map(m => <Message message={m.message}/>);
-let newMessageText = state.newMessageText;
+
 
  
 const maxLength30 = maxLengthCreator (30);

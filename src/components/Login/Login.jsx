@@ -8,7 +8,7 @@ import { Redirect } from 'react-router-dom';
 import s from '../common/FormsControls/FormsControl.module.css';
 
 
-const LoginForm = ({handleSubmit, error, captchaUrl})=>{ //destuctization of propd by extracting what we need from them handleSubmit and error
+const LoginForm = ({handleSubmit, error, captchaUrl})=>{ 
     return(
         <div>
             <form onSubmit={handleSubmit}>
@@ -22,7 +22,7 @@ const LoginForm = ({handleSubmit, error, captchaUrl})=>{ //destuctization of pro
                     <Field  type={'checkbox'} name={'RememberMe'} component={Input}/>remember me
                 </div>
                 
-                { captchaUrl && <img src={captchaUrl}/> }
+                { captchaUrl && <img src={captchaUrl} alt='captcha'/> }
                 { captchaUrl && createField('Symbols from image', 'captcha',[required], Input, {} )}
                 { error && <div className={s.formSummaryError}> {error}
 

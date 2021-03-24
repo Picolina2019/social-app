@@ -10,10 +10,11 @@
       border-radius: 50%;
   }
   .span span{
+ 
     color:black;
     margin:200px;
     border: 1px rgb(0, 140, 168) solid;
     padding:3px;
-    border-radius: 10%;
+   
     
   }

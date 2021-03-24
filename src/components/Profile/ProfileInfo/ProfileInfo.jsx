@@ -28,10 +28,10 @@ if (!profile){
     return (
     <div className={a.content} >
       <div>
-        <img src='https://www.cloudheroes.com/wp-content/uploads/2015/09/Fotolia_84795519_Subscription_Monthly_M.jpg' />
+        <img src='https://www.cloudheroes.com/wp-content/uploads/2015/09/Fotolia_84795519_Subscription_Monthly_M.jpg' alt='logo' />
       </div>
        <div className={a.profileImage}>
-         <img src={profile.photos.large || userPhoto}/>
+         <img src={profile.photos.large || userPhoto} alt='user'/>
         {isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
          <br/>  
         </div>

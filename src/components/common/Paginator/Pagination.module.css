@@ -4,9 +4,11 @@
   text-align: center;
   }
 .pageNumber{
-padding:2px;
+
+
 border:2px solid rgb(82, 78, 78);
 margin:2px;
+padding:4px;
 text-align:center;
 }
 button:focus{
