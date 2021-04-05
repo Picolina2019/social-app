@@ -1,26 +1,23 @@
-import React from 'react';
-import { addMessageActionCreator} from '../../redux/messageReducer';
-import Dialogs from './Dialogs';
-import {connect} from 'react-redux';
-import { AuthRedirect} from '../../components/hoc/AuthRedirect';
+import { connect } from 'react-redux';
 import { compose } from 'redux';
+import { AuthRedirect } from '../../components/hoc/AuthRedirect';
+import { addMessageActionCreator } from '../../redux/messageReducer';
+import Dialogs from './Dialogs';
 
-
-let mapStateToProps=(state)=>{
-    return{
-    messagesPage:state.messagesPage
- 
-    }
+let mapStateToProps = (state) => {
+  return {
+    messagesPage: state.messagesPage,
+  };
 };
-let mapDispatchToProps= (dispatch)=>{
-    return{
-        onMessageAddClick:(newMessageText)=>{
-        dispatch(addMessageActionCreator(newMessageText)); 
-        }
-}
-}
+let mapDispatchToProps = (dispatch) => {
+  return {
+    onMessageAddClick: (newMessageText) => {
+      dispatch(addMessageActionCreator(newMessageText));
+    },
+  };
+};
 
-
-
-
-export default compose (connect (mapStateToProps, mapDispatchToProps),AuthRedirect)(Dialogs)
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  AuthRedirect
+)(Dialogs);
